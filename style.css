@@ -1,0 +1,461 @@
+:root {
+  --N900: #163A34;
+  --N800: #395852;
+  --N600: #395852;
+  --N300: #D0DCD9;
+  --N200: #E0E6E3;
+  --N100: #F6F5F1;
+  --back: #faf9f9;
+  --N0: #fff;
+  --org: #FE9F6B;
+  --teal: #49AC9B;
+  --indigo: #697DDB;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--back);
+}
+
+/* Header */
+
+header {
+  border-bottom: 1px solid var(--N300);
+}
+
+.header {
+  max-width: 1186px;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  gap: 40px;
+}
+
+.list li a {
+  font-size: 18px;
+  color: var(--N900);
+  font-weight: 600;
+}
+
+.first {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.first::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--org);
+  border-radius: 4px;
+}
+
+.btn-browse {
+  padding: 16px 32px;
+}
+
+.btn {
+  background-color: var(--N900);
+  color: var(--N0);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  border-style: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--N800);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 11px;
+  background-color: var(--N300);
+  border-radius: 4px;
+}
+
+.burger span {
+  width: 18px;
+  height: 2px;
+  background-color: var(--N900);
+}
+
+/* Hero sectioin */
+
+.hero {
+  position: relative;
+  min-height: 861px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  z-index: 1;
+}
+
+.pattern {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+}
+
+.hero-box {
+  max-width: 805px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-box h2 {
+  font-size: 72px;
+  color: var(--N900);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: -2px;
+  text-wrap: nowrap;
+}
+
+strong {
+  position: relative;
+  z-index: 1;
+}
+
+strong::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  height: 39px;
+  width: 100%;
+  border-radius: 4px;
+  opacity: 0.4;
+  background-color: var(--org);
+}
+
+.hero-box p {
+  max-width: 580px;
+  font-size: 20px;
+  color: var(--N800);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  letter-spacing: -0.4px;
+  text-align: center;
+
+}
+
+.btn-exploring {
+  padding: 16px 32px;
+}
+
+.hero-baner {
+  height: 530px;
+  background-color: var(--N0);
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.hero-baner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+/* Section whatGet */
+
+.whatGet {
+  margin-top: 96px;
+}
+
+.whatGet h2 {
+  color: var(--N900);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  gap: 32px;
+}
+
+.what-feature {
+  width: 376px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 24px;
+}
+
+.what-image {
+  padding: 13px 18px;
+  box-shadow: 0 1px 0 0 var(--N200);
+  border-radius: 12px;
+  background-color: var(--N0);
+}
+
+.feature-text h3 {
+  font-size: 32px;
+  color: var(--N900);
+  margin-bottom: 12px;
+}
+
+.feature-text p {
+  font-size: 20px;
+  color: var(--N800);
+}
+
+/* Section realLife */
+
+.realLife {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  padding: 96px 0;
+  align-items: center;
+}
+
+.realLife-image {
+  width: 635px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.realLife-image img {
+  width: 100%;
+
+}
+
+.realLife-text {
+  width: 509px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.realLife-text h2 {
+  font-size: 48px;
+  color: var(--N900);
+  font-weight: 900;
+}
+
+.realLife-text p {
+  font-size: 20px;
+  color: var(--N800);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+.decoration {
+  position: relative;
+  z-index: 1;
+}
+
+.decoration::after {
+  position: absolute;
+  content: '';
+  bottom: 3px;
+  left: 0;
+  height: 12px;
+  width: 100%;
+  background-color: var(--org);
+  border-radius: 3px;
+  z-index: -1;
+}
+
+/* Section ready */
+
+.ready {
+  background-color: var(--N200);
+  border-radius: 16px;
+  padding: 96px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fork {
+  position: absolute;
+  top: 31px;
+  left: -90px;
+  z-index: -1;
+}
+
+.knife {
+  position: absolute;
+  top: 31px;
+  right: -80px;
+  z-index: -1;
+}
+
+.ready-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ready-text h3 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -3%;
+  text-align: center;
+  color: var(--N900);
+}
+
+.ready-text p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: var(--N800);
+  margin-bottom: 40px;
+}
+
+.btn-ready {
+  font-size: 18px;
+  line-height: 140%;
+  padding: 16px 24px;
+}
+
+/* Section bottom */
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom span {
+  margin: 40px 0;
+}
+
+.icons {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  width: 114px;
+  height: 22px;
+}
+
+.icons img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Media */
+
+@media (min-width:1440px) {
+  .hero-box h2 {
+    font-size: 76px;
+  }
+}
+
+@media (max-width:767px) {
+  .burger {
+    display: flex;
+  }
+
+  .header nav,
+  .header button {
+    display: none;
+  }
+
+  .hero {
+    padding: 48px 0 0 16px;
+  }
+
+  .hero-box {
+    align-items: flex-start;
+  }
+
+  .hero-box h2 {
+    font-size: 52px;
+    text-wrap: wrap;
+    text-align: left;
+  }
+
+  .hero-box p {
+    text-align: left;
+    padding-right: 16px;
+  }
+
+  .whatGet {
+    padding: 80px 32px;
+    margin-top: 0;
+  }
+
+  .whatGet h2 {
+    text-align: start;
+  }
+
+  .realLife {
+    gap: 40px;
+    padding: 80px 32px;
+  }
+
+  .realLife-image {
+    width: 784px;
+    overflow: hidden;
+  }
+
+  .realLife-image img {
+    width: 100%;
+  }
+
+  .realLife-text {
+    width: 704px;
+  }
+
+  .ready {
+    padding: 80px 0;
+    max-width: 704px;
+    height: 357px;
+  }
+
+  .bottom {
+    padding: 0 32px;
+  }
+
+}

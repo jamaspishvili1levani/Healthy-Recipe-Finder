@@ -1,0 +1,356 @@
+:root {
+    --N900: #163A34;
+    --N800: #395852;
+    --N600: #395852;
+    --N300: #D0DCD9;
+    --N200: #E0E6E3;
+    --N100: #F6F5F1;
+    --back: #faf9f9;
+    --N0: #fff;
+    --org: #FE9F6B;
+    --teal: #49AC9B;
+    --indigo: #697DDB;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/inter/Inter-VariableFont_opsz.wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--back);
+}
+
+/* HEADER */
+
+header {
+    height: 72px;
+    border-bottom: 2px solid var(--N200);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+}
+
+.menu img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--N200);
+    border-radius: 4px;
+    padding: 12px 11px;
+}
+
+/* ourMission */
+.ourMission {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourMission-text {
+    margin-top: 64px;
+}
+
+.ourMission span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: var(--N900);
+    background-color: var(--org);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+.ourMission h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    color: var(--N900);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.ourMission-p {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ourMission-text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    color: var(--N800);
+}
+
+.ourMission-img {
+    width: 343px;
+    height: 333px;
+    margin-bottom: 80px;
+}
+
+.ourMission-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* EXIST */
+.exist {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.exist h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    color: var(--N900);
+    margin: 0 16px 40px 16px;
+}
+
+.exist-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mini-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mini-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mini-text h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    color: var(--N900);
+}
+
+.mini-text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    color: var(--N800);
+}
+
+/* FOOD */
+.food {
+    margin-bottom: 48px;
+}
+
+.food h2 {
+    padding-top: 48px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    color: var(--N900);
+    margin-bottom: 40px;
+}
+
+.mini-text .food-h3 {
+    font-family: "Inter" sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+
+}
+
+.mini-text .food-p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+
+}
+
+/* BEYOND */
+
+.beyond {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 48px;
+}
+
+.beyond-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beyond-information {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.beyond-title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    color: var(--N900);
+    padding-top: 48px;
+}
+
+.beyond-info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    color: var(--N800);
+}
+
+.beyond-list ul li {
+    list-style: disc;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    color: var(--N800);
+}
+
+.beyond-img {
+    width: 343px;
+    height: 184px;
+}
+
+.beyond-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* COOK */
+
+.cook {
+    background-color: var(--N200);
+    border-radius: 16px;
+
+}
+
+.cook-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 16px;
+    gap: 32px;
+}
+
+.cook-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cook-text h3 {
+    color: var(--N900);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.cook-text p {
+    color: var(--N800);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.cook-btn {
+    background-color: var(--N900);
+    color: var(--N0);
+    border-style: none;
+    padding: 16px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+
+.made {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: var(--N900);
+}
+
+/* TABLET */
+
+@media (min-width:376px) {
+    body {
+        background-color: black;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width:768px) {
+    body {
+        background-color: grey;
+    }
+}
