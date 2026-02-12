@@ -19,14 +19,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inter";
-    src: url("./assets/fonts/inter/Inter-VariableFont_opsz.wght.ttf") format("truetype");
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-
 body {
     font-family: "Nunito", sans-serif;
     background-color: var(--back);
@@ -35,69 +27,106 @@ body {
 /* HEADER */
 
 header {
-    height: 72px;
     border-bottom: 2px solid var(--N200);
+
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 92px;
 }
 
-.menu {
-    width: 40px;
-    height: 40px;
+ul {
+    display: flex;
+    gap: 40px;
 }
 
-.menu img {
+a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+    color: var(--N900);
+}
+
+.under-line {
+    position: relative;
+}
+
+.under-line::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-color: var(--org);
     width: 100%;
-    height: 100%;
+    height: 3px;
+    border-radius: 4px;
+}
+
+.btn {
+    font-family: "Nunito", sans-serif;
+    border-style: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    background-color: var(--N900);
+    color: var(--N0);
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.burger {
+    display: none;
+    padding: 12px 11px;
     background-color: var(--N200);
     border-radius: 4px;
-    padding: 12px 11px;
 }
 
-/* ourMission */
-.ourMission {
-    width: 343px;
+/* section mission */
+
+.mission {
+    margin-top: 80px;
+    margin-bottom: 96px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
 }
 
-.ourMission-text {
-    margin-top: 64px;
+.mission-text {
+    width: 510px;
 }
 
-.ourMission span {
+.mission-text span {
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.5px;
     color: var(--N900);
-    background-color: var(--org);
     padding: 2px 6px;
+    background-color: var(--org);
     border-radius: 6px;
 }
 
-.ourMission h2 {
+.mission-text h2 {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 120%;
     letter-spacing: -2px;
     color: var(--N900);
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding: 24px 23px 24px 0;
 }
 
-.ourMission-p {
+.mission-text-p {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-}
-
-.ourMission-text p {
+    gap: 12px;
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
@@ -105,52 +134,54 @@ header {
     color: var(--N800);
 }
 
-.ourMission-img {
-    width: 343px;
-    height: 333px;
-    margin-bottom: 80px;
+.mission-img {
+    width: 618px;
 }
 
-.ourMission-img img {
+.mission-img img {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-/* EXIST */
+/* section exist */
+
 .exist {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding: 96px 0;
 }
 
 .exist h2 {
+    width: 372px;
+    height: 58px;
+
     font-weight: 800;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 120%;
     letter-spacing: -2px;
     color: var(--N900);
-    margin: 0 16px 40px 16px;
 }
 
-.exist-text {
+.mini-sections {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
 }
 
-.mini-section {
+.exist-info {
     display: flex;
-    flex-direction: row;
     gap: 20px;
 }
 
-.mini-text {
+.exist-text {
+    width: 704px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.mini-text h3 {
+.exist-text h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 130%;
@@ -158,7 +189,7 @@ header {
     color: var(--N900);
 }
 
-.mini-text p {
+.exist-text p {
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
@@ -166,69 +197,69 @@ header {
     color: var(--N800);
 }
 
-/* FOOD */
-.food {
-    margin-bottom: 48px;
-}
+/* section food */
 
 .food h2 {
-    padding-top: 48px;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 120%;
     letter-spacing: -2px;
     color: var(--N900);
-    margin-bottom: 40px;
 }
 
-.mini-text .food-h3 {
-    font-family: "Inter" sans-serif;
+.food-text h3 {
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-
+    letter-spacing: 0%;
+    color: var(--N900);
 }
 
-.mini-text .food-p {
+.food-text p {
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.4px;
-
+    color: var(--N800);
 }
 
-/* BEYOND */
-
-.beyond {
+.food {
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-bottom: 48px;
+    gap: 64px;
+    margin-top: 96px;
+    margin-bottom: 96px;
 }
 
-.beyond-text {
+.food-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 
-.beyond-information {
+.food-text {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+.food-mini-section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 752px;
+}
 
-.beyond-title {
+/* section plate */
+
+.plate-text h3 {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 120%;
     letter-spacing: -2px;
     color: var(--N900);
-    padding-top: 48px;
 }
 
-.beyond-info {
+.plate-info p {
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
@@ -236,41 +267,76 @@ header {
     color: var(--N800);
 }
 
-.beyond-list ul li {
-    list-style: disc;
+.plate-info ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.4px;
     color: var(--N800);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
-.beyond-img {
-    width: 343px;
-    height: 184px;
+.plate-info li {
+    gap: 0;
 }
 
-.beyond-img img {
+.plate-img {
+    max-width: 744px;
+}
+
+.plate-img img {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-/* COOK */
+.plate {
+    display: flex;
+    gap: 64px;
+    padding-top: 96PX;
+    padding-bottom: 96PX;
+    align-items: center;
+}
+
+.plate-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    max-width: 376px;
+}
+
+/* section cook */
 
 .cook {
-    background-color: var(--N200);
+    margin-top: 96px;
     border-radius: 16px;
+    background-color: #E9EDE8;
+    position: relative;
+}
 
+.knife::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
 }
 
 .cook-info {
+    padding-top: 96px;
+    padding-bottom: 96px;
     display: flex;
+    flex-direction: column;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 48px 16px;
-    gap: 32px;
 }
 
 .cook-text {
@@ -279,78 +345,367 @@ header {
     gap: 12px;
 }
 
-.cook-text h3 {
-    color: var(--N900);
+.cook-text h2 {
     font-weight: 800;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: -2px;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -3%;
     text-align: center;
+    color: var(--N900);
 }
 
 .cook-text p {
-    color: var(--N800);
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.4px;
     text-align: center;
+    color: var(--N800);
 }
 
-.cook-btn {
-    background-color: var(--N900);
-    color: var(--N0);
-    border-style: none;
-    padding: 16px 24px;
-    border-radius: 10px;
+.btn {
+    margin: 0;
     font-weight: 700;
     font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--N900);
+    color: var(--N0);
 }
 
-/* FOOTER */
+/* Section ready */
 
-.footer {
+.ready {
+    background-color: var(--N200);
+    border-radius: 16px;
+    padding: 96px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 24px;
-    padding-top: 32px;
-    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.social {
+.fork {
+    position: absolute;
+    top: 31px;
+    left: -90px;
+    z-index: -1;
+}
+
+.knife {
+    position: absolute;
+    top: 31px;
+    right: -80px;
+    z-index: -1;
+}
+
+.ready-text {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 23px;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.social:hover {
-    cursor: pointer;
-}
-
-.made {
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.3px;
+.ready-text h3 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -3%;
     text-align: center;
     color: var(--N900);
 }
 
-/* TABLET */
+.ready-text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: var(--N800);
+    margin-bottom: 40px;
+}
 
-@media (min-width:376px) {
-    body {
-        background-color: black;
+.btn-ready {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--N900);
+    color: var(--N0);
+}
+
+/* Section bottom */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom span {
+    margin: 40px 0;
+}
+
+.icons {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    width: 114px;
+    height: 22px;
+}
+
+.icons img {
+    width: 22px;
+    height: 22px;
+}
+
+/* TABLET */
+@media(max-width:768px) {
+
+    /* header */
+
+    .header {
+        padding: 32px 32px 16px 32px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .header ul,
+    .header .btn {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* section mission */
+
+    .mission {
+        flex-wrap: wrap;
+        margin-top: 64px;
+        margin-bottom: 80px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission-text,
+    .mission-img {
+        width: 704px;
+    }
+
+    /* section exist */
+
+    .exist {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 40px;
+        padding: 80px 0;
+    }
+
+    .mini-sections {
+        gap: 32px;
+    }
+
+    .exist h2,
+    .mini-sections {
+        margin: auto;
+        width: 704px;
+    }
+
+    /* section food */
+
+    .food {
+        gap: 40px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+    }
+
+    .food-mini-section {
+        gap: 32px;
+    }
+
+    /* section plate */
+
+    .plate {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    /* Section ready */
+
+    .ready {
+        padding: 80px 0;
+    }
+
+    .ready-text h3 {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -2px;
+        text-align: center;
+        color: var(--N900);
+    }
+
+
+    .mission,
+    .exist,
+    .food,
+    .plate,
+    .ready,
+    .bottom {
+        max-width: 704px;
     }
 }
 
-/* DESKTOP */
+/* MOBILE */
+@media(max-width:375px) {
 
-@media (min-width:768px) {
-    body {
-        background-color: grey;
+    /* header */
+
+    .header {
+        padding: 16px;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    /* section mission */
+
+    .mission {
+        margin-top: 48px;
+        margin-bottom: 64px;
+    }
+
+    .mission-text h2 {
+        font-size: 40px;
+    }
+
+    .mission-text,
+    .mission-img {
+        width: 343px;
+    }
+
+    /* section exist */
+
+    .exist h2 {
+        width: 343px;
+        height: 48px;
+        font-size: 40px;
+    }
+
+    .exist {
+        padding: 48px 0;
+        flex-wrap: wrap;
+    }
+
+    .exist h2,
+    .mini-sections {
+        margin: auto;
+        width: 343px;
+    }
+
+    .mini-sections {
+        gap: 24px;
+    }
+
+    /* section food */
+
+    .food h2 {
+        font-size: 40px;
+    }
+
+    .food {
+        gap: 40px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .food-mini-section {
+        gap: 24px;
+    }
+
+    /* section plate */
+
+    .plate-text h3 {
+        font-size: 40px;
+    }
+
+    .plate {
+        gap: 32px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* section ready */
+
+    .ready {
+        padding: 48px 0;
+    }
+
+    .ready-text h3 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: -2px;
+        text-align: center;
+        color: var(--N900);
+    }
+
+    .ready-text p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: var(--N800);
+        margin-bottom: 40px;
+    }
+
+    /* Section bottom */
+
+    .bottom {
+        height: 122px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .bottom span,
+    .icons {
+        margin: 0;
+    }
+
+
+
+    .mission,
+    .exist,
+    .food,
+    .plate,
+    .ready,
+    .bottom {
+        max-width: 343px;
     }
 }
