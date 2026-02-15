@@ -243,6 +243,7 @@ strong::after {
 .realLife {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
   padding: 96px 0;
   align-items: center;
