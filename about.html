@@ -22,17 +22,22 @@
         <img src="./assets/images/logo.svg" alt="logo">
       </a>
 
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html" class="under-line">About</a></li>
-        <li><a href="./recipes.html">Recipes</a></li>
-      </ul>
+      <nav id="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" class="under-line">About</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li> <button class="btn mobile">Browse recipes</button></li>
+        </ul>
+      </nav>
 
       <button class="btn">Browse recipes</button>
 
-      <a class="burger" href="#">
-        <img src="./assets/images/icon-hamburger-menu.svg" alt="burger-menu">
-      </a>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
     </div>
   </header>
@@ -218,6 +223,7 @@
     </section>
 
   </main>
+  <script src="./about.js"></script>
 </body>
 
 </html>
